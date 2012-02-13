@@ -2,29 +2,61 @@
 @import "blueprint/grid";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3/inline-block";
+@import "compass/layout/stretching";
+
+$hdr-height: 100px;
+$hdr-bg-color: #3e3232;
+
+body {
+  background-color: $hdr-bg-color;
+  font-family: 'Lucida Sans Unicode', 'Myriad Pro', 'Hiragino Sans GB', 'Heiti SC', 微软雅黑, Verdana, Helvetica, sans-serif, SimHei, 黑体;
+}
 
 header.main {
-  height: 100px;
-  background-color: #3e3232;
+  height: $hdr-height;
+  background-color: $hdr-bg-color;
+  z-index: 1000;
+  nav {
+    @include container;
+    width: 600px;
+    ul {
+      @include clearfix;
+      li {
+        line-height: $hdr-height;
+        float: left;
+        margin: 0 20px;
+        a {
+          color: #cbedf6;
+          text-decoration: none;
+          &:hover { text-decoration: underline; }
+          &.current { color: #f2f2f2; }
+        }
+      }
+    }
+  }
+}
+
+$section-height: 600px;
+#container {
+  height: $section-height;
+  overflow: hidden;
 }
 
 section.wrapper {
-  
 }
 
 section.wrapper .body {
   @include container;
   position: relative;
-  height: 100%;
-  color: #999;
+  height: $section-height;
+  color: #666;
 }
 
-#app-demo {
+section#app-demo {
   background-color: #cbedf6;
-  height: 560px;
 }
 
-#about-us {
+section#about-us {
   background-color: #fff;
   .body {
     width: 720px;
@@ -42,30 +74,34 @@ section.wrapper .body {
     }
     .content {
       .person {
-        padding: 20px 0;
+        padding: 10px 0;
         @include clearfix;
+        border-bottom: 1px solid #cbedf6;
         .left {
           float: left;
           margin-right: 20px;
-          width: 100px;
+          width: 50px;
+          img { width: 49px; height: 49px; }
         }
         .right {
           float: left;
-          width: 580px;
+          width: 620px;
           h3 { 
             color: #2d9ed8; 
             font-size: 1.2em; 
             margin-bottom: 0.3em; 
           }
-          p { line-height: 22px; }
+          p { 
+            line-height: 24px;
+            font-size: 0.9em; 
+          }
         }
       }
     }
   }
 }
 
-#app-more {
-  height: 400px;
+section#app-more {
   background-color: #eafafe;
   padding: 20px 0 0 0;
   .body {
@@ -83,9 +119,8 @@ section.wrapper .body {
   }
 }
 
-#app-intro {
+section#app-intro {
   background: url(../images/app_intro_bg.png) 0 0 repeat-x;
-  height: 550px;
   .content {
     position: absolute;
     top: 150px;
@@ -100,16 +135,10 @@ section.wrapper .body {
       line-height: 30px;
     }
   }
-  .iphone {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background: url(../images/top.png) 0 0 no-repeat;
-  }
 }
 
 #slides { text-align: center; }
-.slidesContainer { margin: 0 110px; }
+.slidesContainer { margin: 0 110px 40px 110px; }
 
 a.slidesPrevious, a.slidesNext {
   width: 38px; height: 38px;

@@ -8,8 +8,8 @@
     <script src='javascripts/vendor/modernizer-2.5.2.js' type='text/javascript'></script>
     <script src='javascripts/vendor/handlebars.js' type='text/javascript'></script>
     <script src='javascripts/vendor/slides.jquery.js' type='text/javascript'></script>
+    <script src='javascripts/vendor/scrollTo.jquery.js' type='text/javascript'></script>
     <script src='javascripts/application.js' type='text/javascript'></script>
-
     <script type="text/x-handlebars-template" id="team-template">
       {{#each this}}
       <div class="person">
@@ -42,10 +42,19 @@
   </head>
   <body>
     <header class="main">
+      <nav>
+        <ul>
+          <li><a href="#app-intro" data-wrapper-id="app-intro">首页</a></li>
+          <li><a href="#app-demo" data-wrapper-id="app-demo">Demo</a></li>
+          <li><a href="#app-more" data-wrapper-id="app-more">产品介绍</a></li>
+          <li><a href="#about-us" data-wrapper-id="about-us">团队</a></li>
+        </ul>
+      </nav>
     </header>
+    <div id="container">
     <section id="app-intro" class="wrapper">
       <div class="body">
-        <div class="iphone"></div>
+        <img src="images/top.png" />
         <div class="content"></div>
       </div>
     </section>
@@ -64,11 +73,12 @@
     <section id="about-us" class="wrapper">
       <div class="body">
         <header>
-          <h2>关于我们</h2>
+          <h2>关于 我们</h2>
           <p></p>
         </header>
         <div class="content"></div>
       </div>
     </section>
+    </div>
   </body>
 </html>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 17, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,144 +64,186 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 6, ../../scss/screen.scss */
-header.main {
-  height: 100px;
+/* line 10, ../../scss/screen.scss */
+body {
   background-color: #3e3232;
+  font-family: "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC", 微软雅黑, Verdana, Helvetica, sans-serif, SimHei, 黑体;
 }
 
 /* line 15, ../../scss/screen.scss */
+header.main {
+  height: 100px;
+  background-color: #3e3232;
+  z-index: 1000;
+}
+/* line 19, ../../scss/screen.scss */
+header.main nav {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  width: 600px;
+}
+/* line 22, ../../scss/screen.scss */
+header.main nav ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 24, ../../scss/screen.scss */
+header.main nav ul li {
+  line-height: 100px;
+  float: left;
+  margin: 0 20px;
+}
+/* line 28, ../../scss/screen.scss */
+header.main nav ul li a {
+  color: #cbedf6;
+  text-decoration: none;
+}
+/* line 31, ../../scss/screen.scss */
+header.main nav ul li a:hover {
+  text-decoration: underline;
+}
+/* line 32, ../../scss/screen.scss */
+header.main nav ul li a.current {
+  color: #f2f2f2;
+}
+
+/* line 40, ../../scss/screen.scss */
+#container {
+  height: 600px;
+  overflow: hidden;
+}
+
+/* line 48, ../../scss/screen.scss */
 section.wrapper .body {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
   position: relative;
-  height: 100%;
-  color: #999;
+  height: 600px;
+  color: #666;
 }
 
-/* line 22, ../../scss/screen.scss */
-#app-demo {
+/* line 55, ../../scss/screen.scss */
+section#app-demo {
   background-color: #cbedf6;
-  height: 560px;
 }
 
-/* line 27, ../../scss/screen.scss */
-#about-us {
+/* line 59, ../../scss/screen.scss */
+section#about-us {
   background-color: #fff;
 }
-/* line 29, ../../scss/screen.scss */
-#about-us .body {
+/* line 61, ../../scss/screen.scss */
+section#about-us .body {
   width: 720px;
 }
-/* line 31, ../../scss/screen.scss */
-#about-us .body header {
+/* line 63, ../../scss/screen.scss */
+section#about-us .body header {
   border-bottom: 1px solid #cbedf6;
 }
-/* line 32, ../../scss/screen.scss */
-#about-us .body header h2 {
+/* line 64, ../../scss/screen.scss */
+section#about-us .body header h2 {
   text-align: center;
   font-size: 1.4em;
   margin: 1em;
   color: #2d9ed8;
 }
-/* line 38, ../../scss/screen.scss */
-#about-us .body header p {
+/* line 70, ../../scss/screen.scss */
+section#about-us .body header p {
   line-height: 30px;
 }
-/* line 44, ../../scss/screen.scss */
-#about-us .body .content .person {
-  padding: 20px 0;
+/* line 76, ../../scss/screen.scss */
+section#about-us .body .content .person {
+  padding: 10px 0;
   overflow: hidden;
   *zoom: 1;
+  border-bottom: 1px solid #cbedf6;
 }
-/* line 47, ../../scss/screen.scss */
-#about-us .body .content .person .left {
+/* line 80, ../../scss/screen.scss */
+section#about-us .body .content .person .left {
   float: left;
   margin-right: 20px;
-  width: 100px;
+  width: 50px;
 }
-/* line 52, ../../scss/screen.scss */
-#about-us .body .content .person .right {
+/* line 84, ../../scss/screen.scss */
+section#about-us .body .content .person .left img {
+  width: 49px;
+  height: 49px;
+}
+/* line 86, ../../scss/screen.scss */
+section#about-us .body .content .person .right {
   float: left;
-  width: 580px;
+  width: 620px;
 }
-/* line 55, ../../scss/screen.scss */
-#about-us .body .content .person .right h3 {
+/* line 89, ../../scss/screen.scss */
+section#about-us .body .content .person .right h3 {
   color: #2d9ed8;
   font-size: 1.2em;
   margin-bottom: 0.3em;
 }
-/* line 60, ../../scss/screen.scss */
-#about-us .body .content .person .right p {
-  line-height: 22px;
+/* line 94, ../../scss/screen.scss */
+section#about-us .body .content .person .right p {
+  line-height: 24px;
+  font-size: 0.9em;
 }
 
-/* line 67, ../../scss/screen.scss */
-#app-more {
-  height: 400px;
+/* line 104, ../../scss/screen.scss */
+section#app-more {
   background-color: #eafafe;
   padding: 20px 0 0 0;
 }
-/* line 71, ../../scss/screen.scss */
-#app-more .body {
+/* line 107, ../../scss/screen.scss */
+section#app-more .body {
   width: 1024px;
   background: url(../images/app_more_bg.png) bottom left repeat-x;
 }
-/* line 74, ../../scss/screen.scss */
-#app-more .body h2.title {
+/* line 110, ../../scss/screen.scss */
+section#app-more .body h2.title {
   color: #068bb7;
   font-size: 1.4em;
   margin: 0.6em 0;
   text-align: center;
 }
-/* line 80, ../../scss/screen.scss */
-#app-more .body p {
+/* line 116, ../../scss/screen.scss */
+section#app-more .body p {
   line-height: 30px;
 }
 
-/* line 86, ../../scss/screen.scss */
-#app-intro {
+/* line 122, ../../scss/screen.scss */
+section#app-intro {
   background: url(../images/app_intro_bg.png) 0 0 repeat-x;
-  height: 550px;
 }
-/* line 89, ../../scss/screen.scss */
-#app-intro .content {
+/* line 124, ../../scss/screen.scss */
+section#app-intro .content {
   position: absolute;
   top: 150px;
   left: 420px;
 }
-/* line 93, ../../scss/screen.scss */
-#app-intro .content h2.title {
+/* line 128, ../../scss/screen.scss */
+section#app-intro .content h2.title {
   color: #068bb7;
   font-size: 2em;
   margin: 0.6em 0;
 }
-/* line 98, ../../scss/screen.scss */
-#app-intro .content p {
+/* line 133, ../../scss/screen.scss */
+section#app-intro .content p {
   color: white;
   line-height: 30px;
 }
-/* line 103, ../../scss/screen.scss */
-#app-intro .iphone {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: url(../images/top.png) 0 0 no-repeat;
-}
 
-/* line 111, ../../scss/screen.scss */
+/* line 140, ../../scss/screen.scss */
 #slides {
   text-align: center;
 }
 
-/* line 112, ../../scss/screen.scss */
+/* line 141, ../../scss/screen.scss */
 .slidesContainer {
-  margin: 0 110px;
+  margin: 0 110px 40px 110px;
 }
 
-/* line 114, ../../scss/screen.scss */
+/* line 143, ../../scss/screen.scss */
 a.slidesPrevious, a.slidesNext {
   width: 38px;
   height: 38px;
@@ -209,17 +252,17 @@ a.slidesPrevious, a.slidesNext {
   background: url(../images/arrows.png) 0 0 no-repeat;
   text-indent: -5000px;
 }
-/* line 120, ../../scss/screen.scss */
+/* line 149, ../../scss/screen.scss */
 a.slidesPrevious.slidesPrevious, a.slidesNext.slidesPrevious {
   left: 0;
 }
-/* line 123, ../../scss/screen.scss */
+/* line 152, ../../scss/screen.scss */
 a.slidesPrevious.slidesNext, a.slidesNext.slidesNext {
   right: 0;
   background-position: 0 -38px;
 }
 
-/* line 129, ../../scss/screen.scss */
+/* line 158, ../../scss/screen.scss */
 ul.slidesPagination {
   text-align: center;
   overflow: hidden;
@@ -234,16 +277,16 @@ ul.slidesPagination {
 ul.slidesPagination {
   *display: inline;
 }
-/* line 133, ../../scss/screen.scss */
+/* line 162, ../../scss/screen.scss */
 ul.slidesPagination li {
   float: left;
   margin: 0 5px;
 }
-/* line 136, ../../scss/screen.scss */
+/* line 165, ../../scss/screen.scss */
 ul.slidesPagination li.slidesCurrent a {
   background-position: 0 0;
 }
-/* line 137, ../../scss/screen.scss */
+/* line 166, ../../scss/screen.scss */
 ul.slidesPagination li a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;

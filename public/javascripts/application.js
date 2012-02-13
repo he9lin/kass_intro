@@ -2,29 +2,29 @@ var Data = {};
 
 Data.team = [
   {
-    imageSrc: "me.png",
+    imageSrc: "team_qi.png",
     name: "何麒",
-    content: "美国加州大学洛杉矶分校 （UCLA），硕士， 计算机工程系(主修以物理为基础的电脑动画以及人工智能）。2011年在美国联合创办了heyook网络开发公司，主要用RoR做SNS开发。"
+    content: "美国加州大学洛杉矶分校 （UCLA），硕士， 计算机工程系(主修以物理为基础的电脑动画以及人工智能）。2011年在美国联合创办了heyook网络开发公司，主要用RoR做SNS开发。现主要负责街区项目开发工作。"
   },
   {
-    imageSrc: "me.png",
+    imageSrc: "team_wes.png",
     name: "王智才",
-    content: "美国加州大学伯克利分校 （UC Berkeley），计算机工程系。曾参与美国多家高科技公司研究开发工作。回国后联合创办了杭州食运家网络科技有限公司。XXX创始人之一，现主要负责项目开发工作。"
+    content: "美国加州大学伯克利分校 （UC Berkeley），计算机工程系。曾参与美国多家高科技公司研究开发工作。回国后联合创办了杭州食运家网络科技有限公司。街区创始人之一，现主要负责项目开发工作。"
   },
   {
-    imageSrc: "me.png",
+    imageSrc: "team_lisa.png",
     name: "刘丽莎",
-    content: "网页设计大师级人物，绝不可小看！"
+    content: "上海同济大学高材生。网页设计大师级人物，绝不可小看！现主要负责街区美工设计。"
   },
   {
-    imageSrc: "me.png",
+    imageSrc: "team_lihao.png",
     name: "朱利浩",
-    content: "浙江大学，计算机科学与技术。 曾就职于正泰从事软件开发工作。杭州食运家网络科技有限公司创始人之一。现主要负责街区Android软件开发工作。"
+    content: "浙江大学，计算机科学与技术。 曾就职于正泰从事软件开发工作。杭州食运家网络科技有限公司创始人之一。现主要负责街区项目开发工作。"
   },
   {
-    imageSrc: "me.png",
+    imageSrc: "team_lin.png",
     name: "何麟",
-    content: "美国加州大学洛杉矶分校 （UCLA），硕士， 计算机工程系(主修计算机网络）。凭着对Web 2.0网站开发的热情开始了与好友创业的旅程，是一名狂热的测试引导开发的支持者。"
+    content: "美国加州大学洛杉矶分校 （UCLA），硕士， 计算机工程系(主修计算机网络）。凭着对Web 2.0网站开发的热情开始了与好友创业的旅程，是一名狂热的测试引导开发的支持者。现主要负责街区项目开发工作。"
   }
 ];
 
@@ -35,7 +35,7 @@ Data.app = {
 };
 
 Data.slides = [
-  { imageSrc: "demopreview-slides_19.png" },
+  { imageSrc: "demopreview-slides_19n.png" },
   { imageSrc: "demopreview-slides_02.png" },
   { imageSrc: "demopreview-slides_05.png" },
   { imageSrc: "demopreview-slides_07.png" },
@@ -53,6 +53,8 @@ $(document).ready(function() {
   var slidesTemplate = Handlebars.compile($("#slides-template").html());
   $("#slides").html(slidesTemplate(Data.slides));
   $("#slides").slides({width:734, height:508});
+  $("#slides2").html(slidesTemplate(Data.slides));
+  $("#slides2").slides({width:734, height:508});
 
   var appMoreTemplate = Handlebars.compile($("#app-more-template").html());
   $("#app-more .body").html(appMoreTemplate(Data.app));
@@ -67,7 +69,14 @@ $(document).ready(function() {
     var link = $(event.target);
     link.addClass("current");
     var currentWrapper = $(link.attr("href"));
-    $("#container").scrollTo(currentWrapper, 800, {
+    
+    // if( currentWrapper.attr("id") == "app-more"){
+    //   $("#container").attr({"height" : "800px"});
+    // }else{
+    //   $("#container").attr({"height" : "1600px"});
+    // }
+    
+    $("body").scrollTo(currentWrapper, 800, {
       onAfter: function() {  }
     });
   });

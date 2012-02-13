@@ -16,6 +16,14 @@ header.main {
   height: $hdr-height;
   background-color: $hdr-bg-color;
   z-index: 1000;
+  width: 100%;
+  position: fixed;
+  #head_logo{
+    background: url(../images/head_logo.png) no-repeat;
+    width: 98px;
+    height: 98px;
+    float: left;
+  }
   nav {
     @include container;
     width: 600px;
@@ -36,13 +44,15 @@ header.main {
   }
 }
 
+$container-height: 2800px;
 $section-height: 600px;
 #container {
-  height: $section-height;
+  height: $container-height;
   overflow: hidden;
 }
 
 section.wrapper {
+  padding-top: 100px;
 }
 
 section.wrapper .body {
@@ -57,6 +67,7 @@ section#app-demo {
 }
 
 section#about-us {
+  padding: 120px 0 0 0;
   background-color: #fff;
   .body {
     width: 720px;
@@ -103,7 +114,7 @@ section#about-us {
 
 section#app-more {
   background-color: #eafafe;
-  padding: 20px 0 0 0;
+  padding: 120px 0 0 0;
   .body {
     width: 1024px;
     background: url(../images/app_more_bg.png) bottom left repeat-x;
@@ -119,8 +130,12 @@ section#app-more {
   }
 }
 
+section#footer{
+  background: url(../images/app_intro_bg.png) 0 100px repeat-x;
+}
+
 section#app-intro {
-  background: url(../images/app_intro_bg.png) 0 0 repeat-x;
+  background: url(../images/app_intro_bg.png) 0 100px repeat-x;
   .content {
     position: absolute;
     top: 150px;

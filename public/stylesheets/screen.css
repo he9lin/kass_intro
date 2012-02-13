@@ -81,11 +81,12 @@ header.main {
 /* line 21, ../../scss/screen.scss */
 header.main #head_logo {
   background: url(../images/head_logo.png) no-repeat;
-  width: 98px;
-  height: 98px;
+  width: 78px;
+  height: 78px;
   float: left;
+  margin-top: 10px;
 }
-/* line 27, ../../scss/screen.scss */
+/* line 28, ../../scss/screen.scss */
 header.main nav {
   width: 950px;
   margin: 0 auto;
@@ -93,43 +94,43 @@ header.main nav {
   *zoom: 1;
   width: 600px;
 }
-/* line 30, ../../scss/screen.scss */
+/* line 31, ../../scss/screen.scss */
 header.main nav ul {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 32, ../../scss/screen.scss */
+/* line 33, ../../scss/screen.scss */
 header.main nav ul li {
   line-height: 100px;
   float: left;
   margin: 0 20px;
 }
-/* line 36, ../../scss/screen.scss */
+/* line 37, ../../scss/screen.scss */
 header.main nav ul li a {
   color: #cbedf6;
   text-decoration: none;
 }
-/* line 39, ../../scss/screen.scss */
+/* line 40, ../../scss/screen.scss */
 header.main nav ul li a:hover {
   text-decoration: underline;
 }
-/* line 40, ../../scss/screen.scss */
+/* line 41, ../../scss/screen.scss */
 header.main nav ul li a.current {
   color: #f2f2f2;
 }
 
-/* line 49, ../../scss/screen.scss */
+/* line 50, ../../scss/screen.scss */
 #container {
   height: 2800px;
   overflow: hidden;
 }
 
-/* line 54, ../../scss/screen.scss */
+/* line 55, ../../scss/screen.scss */
 section.wrapper {
   padding-top: 100px;
 }
 
-/* line 58, ../../scss/screen.scss */
+/* line 59, ../../scss/screen.scss */
 section.wrapper .body {
   width: 950px;
   margin: 0 auto;
@@ -140,130 +141,130 @@ section.wrapper .body {
   color: #666;
 }
 
-/* line 65, ../../scss/screen.scss */
+/* line 66, ../../scss/screen.scss */
 section#app-demo {
   background-color: #cbedf6;
 }
 
-/* line 69, ../../scss/screen.scss */
+/* line 70, ../../scss/screen.scss */
 section#about-us {
   padding: 120px 0 0 0;
   background-color: #fff;
 }
-/* line 72, ../../scss/screen.scss */
+/* line 73, ../../scss/screen.scss */
 section#about-us .body {
   width: 720px;
 }
-/* line 74, ../../scss/screen.scss */
+/* line 75, ../../scss/screen.scss */
 section#about-us .body header {
   border-bottom: 1px solid #cbedf6;
 }
-/* line 75, ../../scss/screen.scss */
+/* line 76, ../../scss/screen.scss */
 section#about-us .body header h2 {
   text-align: center;
   font-size: 1.4em;
   margin: 1em;
   color: #2d9ed8;
 }
-/* line 81, ../../scss/screen.scss */
+/* line 82, ../../scss/screen.scss */
 section#about-us .body header p {
   line-height: 30px;
 }
-/* line 87, ../../scss/screen.scss */
+/* line 88, ../../scss/screen.scss */
 section#about-us .body .content .person {
   padding: 10px 0;
   overflow: hidden;
   *zoom: 1;
   border-bottom: 1px solid #cbedf6;
 }
-/* line 91, ../../scss/screen.scss */
+/* line 92, ../../scss/screen.scss */
 section#about-us .body .content .person .left {
   float: left;
   margin-right: 20px;
   width: 50px;
 }
-/* line 95, ../../scss/screen.scss */
+/* line 96, ../../scss/screen.scss */
 section#about-us .body .content .person .left img {
   width: 49px;
   height: 49px;
 }
-/* line 97, ../../scss/screen.scss */
+/* line 98, ../../scss/screen.scss */
 section#about-us .body .content .person .right {
   float: left;
   width: 620px;
 }
-/* line 100, ../../scss/screen.scss */
+/* line 101, ../../scss/screen.scss */
 section#about-us .body .content .person .right h3 {
   color: #2d9ed8;
   font-size: 1.2em;
   margin-bottom: 0.3em;
 }
-/* line 105, ../../scss/screen.scss */
+/* line 106, ../../scss/screen.scss */
 section#about-us .body .content .person .right p {
   line-height: 24px;
   font-size: 0.9em;
 }
 
-/* line 115, ../../scss/screen.scss */
+/* line 116, ../../scss/screen.scss */
 section#app-more {
   background-color: #eafafe;
   padding: 120px 0 0 0;
 }
-/* line 118, ../../scss/screen.scss */
+/* line 119, ../../scss/screen.scss */
 section#app-more .body {
   width: 1024px;
   background: url(../images/app_more_bg.png) bottom left repeat-x;
 }
-/* line 121, ../../scss/screen.scss */
+/* line 122, ../../scss/screen.scss */
 section#app-more .body h2.title {
   color: #068bb7;
   font-size: 1.4em;
   margin: 0.6em 0;
   text-align: center;
 }
-/* line 127, ../../scss/screen.scss */
+/* line 128, ../../scss/screen.scss */
 section#app-more .body p {
   line-height: 30px;
 }
 
-/* line 133, ../../scss/screen.scss */
+/* line 134, ../../scss/screen.scss */
 section#footer {
   background: url(../images/app_intro_bg.png) 0 100px repeat-x;
 }
 
-/* line 137, ../../scss/screen.scss */
+/* line 138, ../../scss/screen.scss */
 section#app-intro {
   background: url(../images/app_intro_bg.png) 0 100px repeat-x;
 }
-/* line 139, ../../scss/screen.scss */
+/* line 140, ../../scss/screen.scss */
 section#app-intro .content {
   position: absolute;
   top: 150px;
   left: 420px;
 }
-/* line 143, ../../scss/screen.scss */
+/* line 144, ../../scss/screen.scss */
 section#app-intro .content h2.title {
   color: #068bb7;
   font-size: 2em;
   margin: 0.6em 0;
 }
-/* line 148, ../../scss/screen.scss */
+/* line 149, ../../scss/screen.scss */
 section#app-intro .content p {
   color: white;
   line-height: 30px;
 }
 
-/* line 155, ../../scss/screen.scss */
+/* line 156, ../../scss/screen.scss */
 #slides {
   text-align: center;
 }
 
-/* line 156, ../../scss/screen.scss */
+/* line 157, ../../scss/screen.scss */
 .slidesContainer {
   margin: 0 110px 40px 110px;
 }
 
-/* line 158, ../../scss/screen.scss */
+/* line 159, ../../scss/screen.scss */
 a.slidesPrevious, a.slidesNext {
   width: 38px;
   height: 38px;
@@ -272,17 +273,17 @@ a.slidesPrevious, a.slidesNext {
   background: url(../images/arrows.png) 0 0 no-repeat;
   text-indent: -5000px;
 }
-/* line 164, ../../scss/screen.scss */
+/* line 165, ../../scss/screen.scss */
 a.slidesPrevious.slidesPrevious, a.slidesNext.slidesPrevious {
   left: 0;
 }
-/* line 167, ../../scss/screen.scss */
+/* line 168, ../../scss/screen.scss */
 a.slidesPrevious.slidesNext, a.slidesNext.slidesNext {
   right: 0;
   background-position: 0 -38px;
 }
 
-/* line 173, ../../scss/screen.scss */
+/* line 174, ../../scss/screen.scss */
 ul.slidesPagination {
   text-align: center;
   overflow: hidden;
@@ -297,16 +298,16 @@ ul.slidesPagination {
 ul.slidesPagination {
   *display: inline;
 }
-/* line 177, ../../scss/screen.scss */
+/* line 178, ../../scss/screen.scss */
 ul.slidesPagination li {
   float: left;
   margin: 0 5px;
 }
-/* line 180, ../../scss/screen.scss */
+/* line 181, ../../scss/screen.scss */
 ul.slidesPagination li.slidesCurrent a {
   background-position: 0 0;
 }
-/* line 181, ../../scss/screen.scss */
+/* line 182, ../../scss/screen.scss */
 ul.slidesPagination li a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;

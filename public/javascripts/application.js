@@ -20,6 +20,7 @@ Data.app = {
 };
 
 Data.slides = [
+  { imageSrc: "demopreview-slides_19.png" },
   { imageSrc: "demopreview-slides_02.png" },
   { imageSrc: "demopreview-slides_05.png" },
   { imageSrc: "demopreview-slides_07.png" },
@@ -27,7 +28,6 @@ Data.slides = [
   { imageSrc: "demopreview-slides_11.png" },
   { imageSrc: "demopreview-slides_13.png" },
   { imageSrc: "demopreview-slides_15.png" },
-  { imageSrc: "demopreview-slides_19.png" },
   { imageSrc: "demopreview-slides_21.png" }
 ];
 

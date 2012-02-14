@@ -548,7 +548,7 @@
 				easing: "" // [String] Dependency: jQuery Easing plug-in <http://gsgd.co.uk/sandbox/jquery/easing/>
 			},
 			slide: {
-				interval: 1000, // [Number] Interval of fade in milliseconds
+				interval: 300, // [Number] Interval of fade in milliseconds
 				browserWindow: false, // [Boolean] Slide in/out from browser window, bad ass
 				easing: "" // [String] Dependency: jQuery Easing plug-in <http://gsgd.co.uk/sandbox/jquery/easing/>
 			},

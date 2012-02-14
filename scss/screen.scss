@@ -141,6 +141,18 @@ section#app-intro {
     position: absolute;
     top: 150px;
     left: 420px;
+    ul.icons {
+      @include clearfix;
+      li {
+        float: left;
+        height: 60px;
+        width: 152px;
+        margin-right: 20px;
+        background: url(../images/icons.png) 0 0 no-repeat;
+        &.android { background-position: 0 -60px; width: 160px; }
+        &.browser { background-position: 0 -120px; }
+      }
+    }
     h2.title {
       color: #068bb7;
       font-size: 2em;
@@ -148,6 +160,7 @@ section#app-intro {
     }
     p {
       color: white;
+      margin-bottom: 0.6em;
       line-height: 30px;
     }
   }

@@ -76,7 +76,9 @@ $(document).ready(function() {
     //   $("#container").attr({"height" : "1600px"});
     // }
     
-    $("body").scrollTo(currentWrapper);
+    $("body").scrollTo(currentWrapper, 800, {
+      onAfter: function() {  }
+    });
   });
 
   var link = $("header.main nav a" + "[href='" + window.location.hash + "']");

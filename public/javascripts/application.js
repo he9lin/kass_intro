@@ -14,7 +14,7 @@ Data.team = [
   {
     imageSrc: "team_lisa.png",
     name: "刘丽莎",
-    content: "上海同济大学高材生。网页设计大师级人物，绝不可小看！现主要负责街区美工设计。"
+    content: "上海同济大学行政管理系毕业。后在美国洛杉矶ELAC学习2D设计与网页设计。Heyook网络开发公司设计师。"
   },
   {
     imageSrc: "team_lihao.png",

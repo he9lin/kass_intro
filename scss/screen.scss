@@ -149,8 +149,27 @@ section#app-intro {
         width: 152px;
         margin-right: 20px;
         background: url(../images/icons.png) 0 0 no-repeat;
-        &.android { background-position: 0 -60px; width: 160px; }
-        &.browser { background-position: 0 -120px; }
+        a, p {
+          display: block;
+          width: 152px;
+          height: 60px;
+          padding: 45px 0 5px 75px;
+          font-size: 12px;
+          color: white;
+          text-decoration: none;
+        }
+        &.android { 
+          background-position: 0 -60px; width: 160px; 
+          p {
+            padding: 37px 0 5px 75px;
+            color: green;
+          }
+        }
+        &.browser { 
+          background-position: 0 -120px; 
+          a{ padding-left: 64px; }
+        }
+        
       }
     }
     h2.title {

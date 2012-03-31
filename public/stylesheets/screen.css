@@ -256,38 +256,57 @@ section#app-intro .content ul.icons li {
   background: url(../images/icons.png) 0 0 no-repeat;
 }
 /* line 152, ../../scss/screen.scss */
+section#app-intro .content ul.icons li a, section#app-intro .content ul.icons li p {
+  display: block;
+  width: 152px;
+  height: 60px;
+  padding: 45px 0 5px 75px;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+/* line 161, ../../scss/screen.scss */
 section#app-intro .content ul.icons li.android {
   background-position: 0 -60px;
   width: 160px;
 }
-/* line 153, ../../scss/screen.scss */
+/* line 163, ../../scss/screen.scss */
+section#app-intro .content ul.icons li.android p {
+  padding: 37px 0 5px 75px;
+  color: green;
+}
+/* line 168, ../../scss/screen.scss */
 section#app-intro .content ul.icons li.browser {
   background-position: 0 -120px;
 }
-/* line 156, ../../scss/screen.scss */
+/* line 170, ../../scss/screen.scss */
+section#app-intro .content ul.icons li.browser a {
+  padding-left: 64px;
+}
+/* line 175, ../../scss/screen.scss */
 section#app-intro .content h2.title {
   color: #068bb7;
   font-size: 2em;
   margin: 0.6em 0;
 }
-/* line 161, ../../scss/screen.scss */
+/* line 180, ../../scss/screen.scss */
 section#app-intro .content p {
   color: white;
   margin-bottom: 0.6em;
   line-height: 30px;
 }
 
-/* line 169, ../../scss/screen.scss */
+/* line 188, ../../scss/screen.scss */
 #slides {
   text-align: center;
 }
 
-/* line 170, ../../scss/screen.scss */
+/* line 189, ../../scss/screen.scss */
 .slidesContainer {
   margin: 0 110px 40px 110px;
 }
 
-/* line 172, ../../scss/screen.scss */
+/* line 191, ../../scss/screen.scss */
 a.slidesPrevious, a.slidesNext {
   width: 38px;
   height: 38px;
@@ -296,17 +315,17 @@ a.slidesPrevious, a.slidesNext {
   background: url(../images/arrows.png) 0 0 no-repeat;
   text-indent: -5000px;
 }
-/* line 178, ../../scss/screen.scss */
+/* line 197, ../../scss/screen.scss */
 a.slidesPrevious.slidesPrevious, a.slidesNext.slidesPrevious {
   left: 0;
 }
-/* line 181, ../../scss/screen.scss */
+/* line 200, ../../scss/screen.scss */
 a.slidesPrevious.slidesNext, a.slidesNext.slidesNext {
   right: 0;
   background-position: 0 -38px;
 }
 
-/* line 187, ../../scss/screen.scss */
+/* line 206, ../../scss/screen.scss */
 ul.slidesPagination {
   text-align: center;
   overflow: hidden;
@@ -321,16 +340,16 @@ ul.slidesPagination {
 ul.slidesPagination {
   *display: inline;
 }
-/* line 191, ../../scss/screen.scss */
+/* line 210, ../../scss/screen.scss */
 ul.slidesPagination li {
   float: left;
   margin: 0 5px;
 }
-/* line 194, ../../scss/screen.scss */
+/* line 213, ../../scss/screen.scss */
 ul.slidesPagination li.slidesCurrent a {
   background-position: 0 0;
 }
-/* line 195, ../../scss/screen.scss */
+/* line 214, ../../scss/screen.scss */
 ul.slidesPagination li a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;

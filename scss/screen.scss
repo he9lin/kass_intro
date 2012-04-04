@@ -135,14 +135,41 @@ section#footer{
   background: url(../images/app_intro_bg.png) 0 100px repeat-x;
 }
 
+#weibo{
+  background: url(../images/weibo.png) 0 0 no-repeat;
+  padding-left: 22px;
+}
+
+#qq{
+  background: url(../images/qq.png) 0 0 no-repeat;
+  padding-left: 22px;
+}
+
 section#app-intro {
   background: url(../images/app_intro_bg.png) 0 100px repeat-x;
   .content {
     position: absolute;
-    top: 150px;
+    top: 50px;
     left: 420px;
+    ul#down_iphone{
+      @include clearfix;
+      margin-bottom: 10px;
+      li{
+        background: url(../images/download-icons.png) 0 0 no-repeat;
+        height: 55px;
+        width: 137px;
+        a { 
+          display: block; 
+          height: 46px;
+          width: 119px;
+        }
+        &.down_91{ background-position: 0 -55px; }
+        &.down_loc{ background-position: 0 -110px; }
+      }
+    }
     ul.icons {
       @include clearfix;
+      margin-bottom: 10px;
       li {
         float: left;
         height: 60px;
@@ -181,8 +208,19 @@ section#app-intro {
       color: white;
       margin-bottom: 0.6em;
       line-height: 30px;
+      &.slink{ 
+        line-height: 16px; 
+        font-size: 12px;
+      }
     }
   }
+}
+
+#footer{ 
+  text-align: center; 
+  color: white;
+  font-size: 12px;
+  padding-top: 4px;
 }
 
 #slides { text-align: center; }
